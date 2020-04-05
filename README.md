@@ -19,7 +19,7 @@ Sending a string:
 
 The action is expecting a two environment variables.
 
-* **`GITLAB_PRIVATE_TOKEN`** (**required**): This is the webhook url to send the payload to.
+* **`GITLAB_PRIVATE_TOKEN`** (**required**): Private token to authenticate towards the GitLab API.
 * **`PROJECT_ID`** (**required**): Project id to trigger the webhook for.
 
 ## License
