@@ -8,8 +8,8 @@ LABEL "com.github.actions.name"="GitLab pull trigger actoni"
 LABEL "com.github.actions.description"="Trigger GitLab to pull a mirrored repository"
 
 # Add the entry point
-WORKDIR /var/scripts
-ADD entrypoint.sh entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 # Load the entry point
-ENTRYPOINT ["sh", "entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
